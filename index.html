@@ -2156,7 +2156,7 @@ id="model-shape">
 <!-- modal connect -->
 <div class="modal-connect js-modal-connect">
 <div class="modal-connect-container js-connect-container">
-    <img src="./assets/img/footer/up-arrow1.png" alt="" class="footer-img-up">
+    <img src="./assets/img/footer/up-arrow1.png" alt="" class="footer-img-up" id="js-connect-close">
 <span class="con-text">تواصل معنا</span>
 <div class="con-Line"></div>
 <span class="con-text-time">
@@ -2321,18 +2321,29 @@ id="model-shape">
             const clockBtns = document.querySelectorAll('.js-clock-list')
   const modal =document.querySelector('.js-modal-clock')
   const modalContainer = document.querySelector('.js-modal-container')
+  // clock
              const yearBtns = document.querySelectorAll('.js-year-list')
       const modalY = document.querySelector('.js-modal-year')
       const modalYearContainer = document.querySelector('.js-year-container')
+
+      // year
            const modelBtns = document.querySelectorAll('.js-model-list')
+           
         const modalM = document.querySelector('.js-modal-model')
         const modalModelContainer = document.querySelector('.js-model-container')
+        // model
         const priceBtns = document.querySelectorAll('.js-price-list')
   const modalP = document.querySelector('.js-modal-price')
   const modalPriceContainer = document.querySelector('.js-price-container')
+  // price
+
   const connectBtns = document.querySelectorAll('.js-connect-list')
         const modalC = document.querySelector('.js-modal-connect')
         const modalConnectContainer = document.querySelector('.js-connect-container')
+        const modalConnectClose = document.querySelector('js-connect-close')
+        // connect
+
+
         const modellBtns = document.querySelectorAll('.js-model2-list')
    const modalMl = document.querySelector('.js-modal-model2')
    const modalModellContainer = document.querySelector('.js-model2-container')
@@ -2417,8 +2428,9 @@ event.stopPropagation()
         
             )
         }
+        
         modalC.addEventListener('click',hidenConnectList)
-        modalC.addEventListener('click', function (event){
+        modalConnectContainer.addEventListener('click', function (event){
             event.stopPropagation()
         })
 
@@ -2457,7 +2469,6 @@ event.stopPropagation()
     clockBtn.addEventListener('click',hidenYearList) 
     clockBtn.addEventListener('click',hidenModallList)
     clockBtn.addEventListener('click',hidenModelList) 
-
       clockBtn.addEventListener('click',showClockList
 
       )
