@@ -26,29 +26,34 @@
     src: url(./fonts/Droid\ Sans\ Arabic\ Regular.ttf);
 }
 .modal-clock{
-    
-    position: fixed;
-    /* z-index: 1; */
-    top: 0;
+    margin: 0 auto;
+    width: 1440px;
+    height: 5734px;
+    position: absolute;
+    z-index: 20;
+    top: 183px;
     right: 0;
     bottom: 0px;
-    left: 15px;
-    padding: 20px;
+    left: 0px;
+    /* padding: 20px; */
     display: none;
-    animation: modalFadeIn ease 0.3s;
+    
+    /* animation: modalFadeIn ease 0.3s; */
 }
 .modal-clock.open{
+    z-index: 2;
     display: flex;
-    /* background: rgba(51, 170, 51, .1); */
-    /* background-color: violet; */
-    
+    background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
 }
 .modal-container{
     width: 583px;
-  height: 653px;
+  height: 597px;
   position: absolute;
-  top: 127px;
+  top: 0px;
   left: 19px;
+  bottom: 0px;
+  z-index: 5 ;
   
   padding: 22px 40px 93px 21px;
   border: solid 0.5px rgba(38, 50, 56, 0.13);
@@ -57,7 +62,7 @@
 }
 
 .modal-header .header-from{
-    top: 135px;
+    top: 79px;
     left: 35px;
     position: absolute;
     width: 235px;
@@ -72,7 +77,7 @@
     width: 149px;
     height: 31px;
     position: relative;
-    top: 92px;
+    top: 36px;
     left: 420px;
     font-family: 'DroidArabicKufi';
     font-size: 16px;
@@ -97,7 +102,7 @@
 }
 .modal-header .header-to{
     position: absolute;
-     top: 135px;
+     top: 79px;
     right: 41px; 
     width: 235px;
     height: 49px; 
@@ -112,7 +117,7 @@
     width: 235px;
     height: 1px;
     position: absolute;
-    top: 216px;
+    top: 160px;
     left: 34px;
     border: solid 1px #c5c5c5;
   }
@@ -120,7 +125,7 @@
     width: 235px;
     height: 1px;
     position: absolute;
-    top: 216px;
+    top: 160px;
     right: 41px;
     border: solid 1px #c5c5c5;
   }
@@ -128,7 +133,7 @@
     width: 10px;
     height: 17px;
     position: absolute;
-    top: 208px;
+    top: 152px;
     right: 290px;
     font-family: 'DroidSansArabic';
     font-size: 12px;
@@ -145,7 +150,7 @@
     width: 142px;
   height: 31px;
   position: absolute;
-  top: 249px;
+  top: 193px;
   left: 401px;
     font-family: 'DroidArabicKufi';
     font-size: 16px;
@@ -162,7 +167,7 @@
 max-width: 550px;
 max-height: 300px;
 position: absolute;
-top: 292px;
+top: 236px;
 /* left: 32px; */
 
 }
@@ -208,38 +213,47 @@ top: 292px;
     }
 
 
+
     /* modal year */
 .modal-year{
-    position: fixed;
-    /* z-index: 5; */
-    top: 0;
+    width: 1440px;
+    height: 5734px;
+    position: absolute;
+    z-index: 20;
+    margin: 0 auto;
+    /* z-index: 2; */
+    top: 183px;
     right: 0;
     bottom: 0px;
     left: 0;
     display: none;
-    animation: modalFadeIn ease 0.3s;
+    /* animation: modalFadeIn ease 0.3s; */
 }
 .modal-year.open{
+    z-index: 3;
 display: flex;
-/* z-index: 1; */
-/* background-color: rgba(51, 170, 51, .1); */
+background-color: rgb(0,0,0); 
+background-color: rgba(0,0,0,0.4);
 
 }
 .modal-year-container{
 position: relative;
 width: 650px;
-height: 513px;
-top: 127px;
+height: 457px;
+top: 0px;
 left: 361px;
+bottom: 100px;
 border: solid 0.5px rgba(38, 50, 56, 0.13);
 background-color: var(--calcite);
+z-index: 5 ;
+
 
 }
 .year-enter{
 width: 89px;
 height: 31px;
 position: relative;
-top: 112px;
+top: 56px;
 left: 555px;
 font-family: 'DroidArabicKufi';
 font-size: 16px;
@@ -262,12 +276,12 @@ background-color: var(--calcite);
 .year-from{
 padding: 15px 110px 15px 24px;
 position: relative;
-top: 155px;
+top: 99px;
 left: 104px;
 }
 .year-to{
 position: relative;
-top: 106px;
+top: 50px;
 left:379px;
 padding: 15px 110px 15px 24px;
 
@@ -287,14 +301,14 @@ color: var(--colors-on-background);
 width: 235px;
 height: 1px;
 position: absolute;
-top: 236px;
+top: 180px;
 left: 104px;
 border: solid 1px #c5c5c5;
 }
 .year-or{
 font-family: 'DroidSansArabic';
 position: absolute;
-top: 236px;
+top: 180px;
 left: 355px;
 font-size: 12px;
 font-weight: normal;
@@ -310,7 +324,7 @@ color: var(--colors-on-background);
 width: 235px;
 height: 1px;
 position: relative;
-top: 120px; 
+top: 64px; 
  left: 379px;
 border: solid 1px #c5c5c5;
 }
@@ -319,7 +333,7 @@ border: solid 1px #c5c5c5;
 width: 228px;
 height: 31px;
 position: absolute;
-top: 269px;
+top: 213px;
 right: 36px;
 font-family: 'DroidSansArabic';
 font-size: 12px;
@@ -348,7 +362,7 @@ margin-left: 61px;
 margin-bottom: 29px;
 padding: 18px 46px 20px 44px;
 position: relative;
-top: 200px;
+top: 144px;
 left: 33px;
 float: left;
 border-radius: 7.4px;
@@ -371,4 +385,770 @@ font-style: normal;
 line-height: normal;
 letter-spacing: 0.75px;
 color: var(--colors-on-background);
+}
+/* modal model */
+.modal-model{
+    position: fixed;
+    width: 1440px;
+    height: 5734px;
+    position: absolute;
+    z-index: 20;
+    margin: 0 auto;
+    /* z-index: 2; */
+    top: 183px;
+    right: 0;
+    bottom: 0px;
+    left: 0;
+    display: none;
+    
+    /* animation: modalFadeIn ease 0.3s; */
+}
+
+.model-container{
+    overflow-y: auto ;
+    overflow-x: hidden ;
+    position: absolute;
+    width: 473px;
+    height: 689px;
+    top: 0px;
+    left: 670px;
+    right: 297px;
+    border: solid 0.5px rgba(38, 50, 56, 0.13);
+    background-color: var(--calcite);
+    z-index: 6 ;
+    
+}
+.modal-model.open{
+    z-index: 3;
+display: flex;
+background-color: rgb(0,0,0); 
+background-color: rgba(0,0,0,0.4);
+
+}
+.model-text{
+    height: 50px;
+    width: 416px;
+    background-color: #c5c5c5;
+    position: relative;
+    top: 25px;
+    left: 27px;
+    right: 30px;
+    /* text-align: right; */
+    padding: 16px 19px 14px 167px;
+    border-radius: 6px;
+    background-color: #f6f9fc;
+    border: none;
+    opacity: 0.4;
+    font-family: 'DroidSansArabic';
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--colors-on-background);
+  }
+#model-shape{
+    
+position: relative;
+top: 24px;
+right: 20px;
+cursor: pointer;
+
+}
+ .model-car-maker span{
+    position: absolute;
+    top: 99px;
+    /* left: 308px; */
+    right: 30px;
+    font-family: 'DroidArabicKufi';
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--colors-on-background);
+}
+
+.model-list-car{
+    
+    position: relative;
+    top: 91px;
+    left: 221px;
+    height: 58px;
+    width: 227px;
+    /* background-color: #feca57; */
+    padding: 10px 12px 13px 23.7px;
+    border-radius: 6px;
+}
+.model-list-car:hover{
+     border: solid 1px var(--cerulean);
+     cursor: pointer;
+     box-sizing: border-box;
+     /* background-color: var(--calcite) !important; */
+}
+
+.model-list-car img{
+    float: right;
+
+}
+
+.model-list-car span{
+   position: absolute;
+   float: right;
+   right: 120px;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 4;
+    letter-spacing: normal;
+    text-align: right;
+    color: var(--colors-on-background);
+}
+
+/* modal-price */
+.modal-price{
+    position: fixed;
+    width: 1440px;
+    height: 5734px;
+    position: absolute;
+    z-index: 20;
+    margin: 0 auto;
+    /* z-index: 2; */
+    top: 183px;
+    right: 0;
+    bottom: 0px;
+    left: 0;
+    display: none;
+    
+    /* animation: modalFadeIn ease 0.3s; */
+}
+.modal-price.open{
+    z-index: 3;
+    display: flex;
+    background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+}
+.price-container{
+    overflow-y: auto ;
+    overflow-x: hidden ;
+    position: absolute;
+    width: 623px;
+    height: 627px;
+    top: 0px;
+    left: 799px;
+    right: 18px;
+    border: solid 0.5px rgba(38, 50, 56, 0.13);
+    background-color: var(--calcite);
+    z-index: 5 ;
+
+}
+.enter-price{
+    width: 155px;
+  height: 31px;
+  position: relative;
+  left: 438px;
+  top: 36px;
+  right: 40px;
+  font-family: DroidSansArabic;
+  font-size: 10px;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.gird-container-price{
+    position: absolute;
+display: grid;
+grid-template-columns: auto auto;
+top: 79px;
+left: 72px;
+grid-gap: 30px;
+
+
+}
+.gird-enter-price{
+    width: 235px;
+    height: 49px;
+    opacity: 0.4;
+    border-radius: 6px;
+    padding: 14px 81px 13px 77px;
+    text-align: center;
+    opacity: 0.5;
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--cerulean);
+  
+    border: solid 1px var(--cerulean);
+    background-color: var(--calcite);
+}
+.gird-container.price-items{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 24px;
+    padding: 206px 41px 50px 72px;
+}
+.gird-container .price-item{
+width: 235px;
+height: 49px;
+border-radius: 6px;
+padding: 13px 41px 15px;
+border: solid 1px var(--cerulean);
+background-color: var(--calcite);
+/* background-color: lawngreen; */
+text-align: center;
+}
+.price-item span{
+    font-family: 'DroidSansArabic';
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.75px;
+    text-align: center;
+    color: var(--colors-on-background);
+}
+.Line-8-Copy-price{
+    position: relative;
+    top: 140px;
+    left: 70px;
+    width: 235px;
+  height: 1px;
+  border: solid 1px #c5c5c5;
+}
+.Line-8-price{
+    position: relative;
+    top: 138px;
+    left: 347px;
+    width: 235px;
+  height: 1px;
+  border: solid 1px #c5c5c5;
+}
+.price-moldel{
+    position: absolute;
+    top: 200px;
+    left: 436px;
+    font-family: 'DroidSansArabic';
+    font-size: 10px;
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.5);
+}
+ .Pricebold{
+    font-family: 'DroidArabicKufi';
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: var(--colors-on-background);
+}
+
+
+  /* modal-connect */
+  .modal-connect{
+    position: fixed;
+    width: 1440px;
+    margin: 0 auto;
+    /* z-index: 2; */
+    top: 0;
+    right: 0;
+    bottom: 0px;
+    left: 0;
+    display: none;
+    
+  }
+  .footer-img-up{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+  }
+  .js-modal-connect{
+    cursor: pointer;
+  }
+  .modal-connect.open{
+    z-index: 3;
+    display: flex;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+  }
+
+.modal-connect-container{
+position: fixed;
+width: 444px;
+height: 705px;
+top: 10px;
+/* bottom: -100px; */
+bottom: 9%;
+margin-bottom: 10px;
+right: 2%;
+border: solid 0.5px rgba(38, 50, 56, 0.13);
+background-color: var(--calcite);
+z-index: 5 ;
+border-radius: 10px;
+/* margin-bottom: 600px; */
+animation: modalFadeIn1 ease 0.3s;
+
+}
+.modal-con-btn{
+    /* width: 100%;  */
+    position: relative;
+    height: 54px;
+    /* background-color: #0089cf; */
+    margin-left: 22px;
+    margin-right: 22px;
+    top: 430px;
+    border-radius: 4px;
+    background-color: var(--cerulean);
+    text-align: center;
+    
+}
+.modal-con-btn span{
+    top: 15px;
+    position: relative;
+    padding: 10px;
+    font-family:'DroidSansArabic';
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    /* text-align: right; */
+    color: var(--calcite);
+}
+
+@keyframes modalFadeIn1 {
+    from{
+        opacity: 0;
+        transform: translateY(-90%);
+    }
+    to {
+        /* opacity: 1; */
+        transform: translateY(10);
+    }
+    }
+
+.con-text{
+    position: absolute;
+    top: 14px;
+    left: 345px;
+    font-family: 'DroidSansArabic';
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #000;
+}
+.con-Line{
+    position: relative;
+    top: 40px;
+    width: 443px;
+  height: 1px;
+  /* margin: 0 0 302px; */
+  border: solid 1px #979797;
+}
+.con-text-time{
+    position: absolute;
+    top: 83px;
+    margin: 0 24px;
+    font-family: 'DroidSansArabic';
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.25;
+    letter-spacing: normal;
+    text-align: right;
+    color: var(--colors-on-background);
+}
+.con-name{
+    position: relative;
+    top: 152px;
+    left: 355px;
+    font-family: 'DroidArabicKufi';
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: var(--colors-on-background);
+}
+.con-enter-name{
+    position: relative;
+    display: inline-block;
+    top: 164px;
+    width: 396px;
+    height: 38px;
+    left: 24px;
+    padding: 20px 16px 15px 283px;
+    border-radius: 4px;
+    border: solid 1px #c5c5c5;
+    background-color: #f4f4f4;
+}
+.con-phone{
+    position: absolute;
+    top: 250px;
+    right: 24px;
+    font-family: 'DroidArabicKufi';
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: var(--colors-on-background);
+}
+.con-enter-phone{
+    position: absolute;
+    /* display: inline-block; */
+    top: 274px;
+    width: 396px;
+    height: 38px;
+    left: 24px;
+    padding: 20px 16px 15px 283px;
+    border-radius: 4px;
+    border: solid 1px #c5c5c5;
+    background-color: #f4f4f4;
+}
+.con-pur{
+    position: absolute;
+    top: 338px;
+    right: 24px;
+    font-family: 'DroidArabicKufi';
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: var(--colors-on-background);
+}
+.con-enter-pur{
+    position:  absolute;
+    /* display: inline-block; */
+    top: 360px;
+    width: 396px;
+    height: 38px;
+    left: 24px;
+    padding: 0px 16px 0px 293px;
+    border-radius: 4px;
+    border: solid 1px #c5c5c5;
+    background-color: #f4f4f4;
+}
+.con-cont{
+    position: absolute;
+    top: 420px;
+    right: 24px;
+    font-family: 'DroidArabicKufi';
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: var(--colors-on-background);
+}
+.con-enter-cont{
+    position: relative;
+    /* display: inline-block; */
+    top: 386px;
+    width: 396px;
+    height: 132px;
+    left: 24px;
+    padding: 20px 16px 15px 283px;
+    border-radius: 4px;
+    border: solid 1px #c5c5c5;
+    background-color: #f4f4f4;
+    
+}
+
+/* model2 */
+.modal-model2{
+    position: fixed;
+    width: 1440px;
+    height: 5734px;
+    position: absolute;
+    z-index: 20;
+    margin: 0 auto;
+    /* z-index: 2; */
+    top: 183px;
+    /* right: 297px; */
+    right: 0;
+    bottom: 0px;
+    left: 0;
+    display: none;
+    
+    /* animation: modalFadeIn ease 0.3s; */
+}
+.modal-model2-container{
+    overflow-y: auto ;
+    overflow-x: hidden ;
+    position: absolute;
+    width: 833px;
+    height: 689px;
+    top: 0px;
+    /* left: 310px; */
+    right: 147px;
+    
+    border: solid 0.5px rgba(38, 50, 56, 0.13);
+    background-color: var(--calcite);
+    /* background-color: #0089cf; */
+    z-index: 6 ;
+}
+
+
+
+.modal-model2.open{
+    z-index: 6;
+display: flex;
+background-color: rgb(0,0,0); 
+background-color: rgba(0,0,0,0.4);
+
+
+}
+.model2-text{
+    height: 50px;
+    width: 771px;
+    background-color: #c5c5c5;
+    position: relative;
+    top: 25px;
+    left: 27px;
+    right: 30px;
+    /* text-align: right; */
+    padding: 16px 19px 14px 167px;
+    border-radius: 6px;
+    background-color: #f6f9fc;
+    border: none;
+    opacity: 0.4;
+    font-family: 'DroidSansArabic';
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--colors-on-background);
+  }
+#model2-shape{
+    
+position: relative;
+top: 24px;
+right: 20px;
+cursor: pointer;
+
+}
+ .model-car-maker2 span{
+    position: absolute;
+    top: 99px;
+    /* left: 308px; */
+    right: 30px;
+    font-family: 'DroidArabicKufi';
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--colors-on-background);
+}
+
+.model-list-car2{
+    
+    position: relative;
+    top: 91px;
+    /* left: 221px; */
+    left: 588px;
+    height: 58px;
+    width: 227px;
+    /* background-color: #feca57; */
+    padding: 10px 12px 13px 23.7px;
+    border-radius: 6px;
+}
+.model-list-car2:hover{
+     border: solid 1px var(--cerulean);
+     cursor: pointer;
+     box-sizing: border-box;
+     /* background-color: var(--calcite) !important; */
+}
+
+.model-list-car2 img{
+    float: right;
+
+}
+
+.model-list-car2 span{
+   position: absolute;
+   float: right;
+   right: 120px;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 4;
+    letter-spacing: normal;
+    text-align: right;
+    color: var(--colors-on-background);
+}
+.line-model{
+    width: 1px;
+    height: 90%;
+    border: solid 1px #979797;
+    position: absolute;
+    top: 104px;
+    left: 586px;  
+}
+.model-huyndai-img{
+    width: 93px;
+    height: 44px;
+    position: absolute;
+    /* bottom: 544px; */
+    top: 101px;
+    left: 32px;
+}
+.moddel2-text{
+    position: absolute;
+    bottom: 559px;
+    left: 389px;
+    font-family: 'DroidArabicKufi';
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--colors-on-background);
+}
+.model2-car-items{
+    position: relative;
+    float: left;
+    margin-left: 88px;
+    left: -31px;
+    bottom: 459px;
+    width: 112px;
+    height: 139px;
+    display: flex;
+   
+}
+.model2-car-items .check{
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 3.13;
+    letter-spacing: normal;
+    text-align: right;
+    color: var(--colors-on-background);
+}
+.Grandi10-Santa-Fe-Xc {
+    width: 100%;
+    padding: 0 30;
+    /* height: 139px; */
+    margin: 0 2px 1px 0;
+    font-family: 'DroidSansArabic';
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 3.13;
+    letter-spacing: normal;
+    text-align: right;
+    color: var(--colors-on-background);
+    
+  }
+
+.js-model2-list{
+    cursor: pointer;
+}
+/* .js-model2-list:hover{
+    background-color: #feca57;
+} */
+
+
+.container.check {
+    height: 37px;
+  display: block;
+  position: relative;
+   padding: 0;
+  cursor: pointer;
+  /* font-size: 22px; */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.container.check:hover{
+    border: 1px solid #0089cf;
+    border-radius: 6px;
+}
+
+/* Hide the browser's default checkbox */
+.container.check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: none;
+}
+
+/* On mouse-over, add a grey background color */
+.container.check:hover input ~ .checkmark {
+  
+}
+
+/* When the checkbox is checked, add a blue background */
+.container.check input:checked ~ .checkmark {
+ 
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container.check input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container.check .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #008dd0;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
